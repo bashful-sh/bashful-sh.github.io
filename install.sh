@@ -18,3 +18,4 @@ sudo chown $USER:$USER ~/.bashrc
 
 # Start
 source ~/.bashrc
+clear
