@@ -17,4 +17,4 @@ sudo cp /opt/bashful/src/.bashrc ~/.bashrc
 sudo chown $USER:$USER ~/.bashrc
 
 # Start
-. ~/.bashrc
+source ~/.bashrc
