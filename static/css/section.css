@@ -1,0 +1,39 @@
+/*
+*
+*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  overflow: hidden;
+
+  left: 0;
+  z-index: 5;
+
+  min-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+
+  border: 0 solid transparent !important;
+  border-radius: 0px !important;
+}
+
+@media only screen and (min-width: 100rem) {
+  section {
+    left: 25vw;
+
+    min-width: 50vw;
+    width: 50vw;
+    max-width: 50vw;
+    min-height: 80vh;
+    height: 80vh;
+    max-height: 80vh;
+
+    border: 1px solid rgba(255, 255, 255, 0.27) !important;
+    border-radius: 16px !important;
+  }
+}

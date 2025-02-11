@@ -1,0 +1,34 @@
+/*
+*
+*/
+
+h1 {
+  color: #ffffffDD;
+  font-family: inherit;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #ffffffAA;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin-bottom: 13px;
+}
+
+h3 {
+  color: #ffffff88;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  margin-bottom: 13px;
+}

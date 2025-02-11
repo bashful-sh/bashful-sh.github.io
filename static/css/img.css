@@ -1,0 +1,12 @@
+/*
+*
+*/
+
+img {
+  user-select: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

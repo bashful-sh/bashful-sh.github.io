@@ -1,0 +1,19 @@
+/*
+*
+*/
+
+input {
+  width: 286px;
+  height: 32px;
+
+  font-family: default;
+  font-weight: normal;
+  font-size: 18px;
+
+  padding: 0 12px;
+  outline: none;
+  color: #FFF;
+  border: 1px solid #00000099;
+  border-radius: 6px;
+  background-color: #20202933;
+}

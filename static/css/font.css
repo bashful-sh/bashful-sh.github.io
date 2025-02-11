@@ -1,0 +1,21 @@
+/*
+*
+*/
+
+@font-face {
+    font-family: "default";
+    font-weight: normal;
+    src: url("/static/assets/font/normal.otf") format("opentype");
+}
+
+@font-face {
+    font-family: default;
+    font-weight: medium;
+    src: url("/static/assets/font/medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: default;
+    font-weight: bold;
+    src: url("/static/assets/font/bold.otf") format("opentype");
+}

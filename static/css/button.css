@@ -1,0 +1,36 @@
+/*
+*
+*/
+
+button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 126px;
+  padding: 8px 24px;
+  margin: .25vh .25vw .25vh 0;
+  font-family: default;
+  font-size: 0.95rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: unset;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  color: #fff;
+  border: 1px solid #DDDFFF;
+  outline: none;
+  border-radius: 0.25rem;
+  background-color: #202029;
+  box-shadow: 4px 4px 12px #00000066;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -moz-column-gap: 0.66rem;
+       column-gap: 0.66rem;
+}
