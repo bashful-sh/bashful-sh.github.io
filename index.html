@@ -25,8 +25,9 @@
   <link rel="stylesheet" href="static/css/p.css">
   <link rel="stylesheet" href="static/css/root.css">
   <link rel="stylesheet" href="static/css/section.css">
-  <script src="static/js/search.js"></script>
+  <script src="static/js/cmd.js"></script>
   <script src="static/js/git.js"></script>
+  <script src="static/js/search.js"></script>
 </head>
 <body>
   <div class='hero'>
@@ -52,16 +53,19 @@
         <h2>Bashful</h2>
         <h3>bashful-sh</h3>
         <p>A bash/shell terminal extension primarily used for profile and package management with Linux (Debian/Ubuntu) based systems.</p>
-        <p style="text-shadow: 0 4px 12px #00000066;">
+        <p style="margin-bottom:3.25vh;">
           <i class='bx bxs-star'>&nbsp;</i><span id="star-count">...</span>&nbsp;
           <i class='bx bx-git-repo-forked'></i>&nbsp;<span class="repo-info" id="fork-count">...</span>
         </p>
         <div id="command-selector">
-          <pre class="selected">Download & Install</pre>
-          <pre>Clone Source</pre>
+          <pre id="download-cmd-option" class="selected" onclick="selectDownload();">Download & Install</pre>
+          <pre id="clone-cmd-option" class="" onclick="selectClone();">Clone Source</pre>
+          <button id="copy-button" title="Copy to Clipboard" onclick="selectCopy();">
+            <i class='bx bx-copy'></i>
+          </button>
         </div>
         <div id="command-snippet">
-          <code>curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
+          <code id="command-snippet-el">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
         </div>
         <div id="options">
           <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
@@ -73,7 +77,7 @@
   <div id="footer-container">
     <footer>
       <p id="footer-text">
-        All related assets are copyright &copy; Easter Company. All rights reserved.
+        All related assets are copyright.<br/>&copy; Easter Company. All rights reserved.
       </p>
     </footer>
   </div>

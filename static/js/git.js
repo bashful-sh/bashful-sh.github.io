@@ -1,3 +1,7 @@
+/*  static/js/git.js
+ *  handles any git api integrations.
+ */
+
 const repoOwner = "bashful-sh";
 const repoName = "bashful";
 const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}`;

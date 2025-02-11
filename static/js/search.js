@@ -1,3 +1,6 @@
+/*  static/js/search.js
+ *  handles functionality for the search component.
+ */
 
 const openSearch = () => {
   const openBtn = document.getElementById("search-open");
