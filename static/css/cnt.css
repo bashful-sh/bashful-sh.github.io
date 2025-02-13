@@ -13,13 +13,13 @@
 #preview>img {
   display: block;
   justify-self: center;
-  width: 12.5vmin;
-  height: 12.5vmin;
+  width: 20vmin;
+  height: 20vmin;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media only screen and (min-width: 1640px) {
+@media only screen and (min-width: 1000px) {
   #preview>img {
     width: 12.5vmin;
     height: 12.5vmin;
@@ -98,13 +98,30 @@
 #options {
   display: flex;
   overflow: auto;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
   justify-content: flex-start;
   min-width: 100%;
   width: 100%;
   max-width: 100%;
   padding: 1.25vmin 0;
+}
+#options>*>*{
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 1000px) {
+  #options {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #options>*>*{
+    min-width: unset;
+    width: unset;
+    max-width: unset;
+  }
 }
 
 #copy-button {
