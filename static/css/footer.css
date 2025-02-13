@@ -3,45 +3,23 @@
 */
 
 footer {
+  z-index:10;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: center;
   align-items: center;
   vertical-align: center;
   justify-content: center;
-  min-width: 100%;
-  width: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  height: 100%;
-  max-height: 100%;
-}
-
-#footer-container {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  overflow: hidden;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-  min-width: 100vw;
-  width: 100vw;
-  max-width: 100vw;
-  min-height: 68px;
-  height: 1.25vh;
-  max-height: 168px;
-  border-radius: 0px !important;
-  border-left: 0 solid #000 !important;
-  border-right: 0 solid #000 !important;
-  border-bottom: 0 solid #000 !important;
+  width: fit-content;
+  height: 5vmin;
+  margin-top: -5vmin;
+  background-color: transparent;
 }
 
 #footer-text {
+  color: #fff;
   text-align: center;
-  align-self: center;
-  vertical-align: center;
-  font-family: default;
+  font-family: "Poppins";
   font-weight: normal;
-  font-size: 14px;
+  font-size: 13px;
 }

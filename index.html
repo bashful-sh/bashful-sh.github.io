@@ -62,17 +62,19 @@
     </nav>
   </div>
   <main class="glass">
-    <div id="preview">
-        <img src="static/assets/logo/bashful-sh_logo.jpg" alt="bashful-sh logo">
-    </div>
     <div id="detail">
-        <h2>Bashful <p style="color:#666;font-size:16px;">By Bashful-sh</p></h2>
-        <p>A terminal extension used for bash profile and package management with Linux, primarily Debian &amp; Ubuntu based systems. Now includes local AI, ML, LLM integrations such as the <code>gcode</code> command for generating quick code snippets.</p>
-        <p style="margin-bottom:3.25vh;">
-          <i class='bx bxs-star'></i><span id="star-count">&nbsp;</span>&nbsp;
-          <i class='bx bx-broadcast'></i><span class="repo-info" id="watcher-count">&nbsp;</span>&nbsp;
-          <i class='bx bx-git-repo-forked'></i><span class="repo-info" id="fork-count">&nbsp;</span>&nbsp;
-        </p>
+        <div style="display:flex;flex-direction:row;">
+          <img id="preview" src="static/assets/logo/bashful-sh_logo.jpg" alt="bashful-sh logo" width="15vw" height="15vw">
+          <div>
+            <h2>Bashful&nbsp;<p style="color:#666;font-size:16px;">By Bashful-sh</p></h2>
+            <p>A terminal extension used for bash profile and package management with Linux, primarily Debian &amp; Ubuntu based systems. Now includes local AI, ML, LLM integrations such as the <code>gcode</code> command for generating quick code snippets.</p>
+            <p style="margin-bottom:3.25vh;">
+              <i class='bx bxs-star'></i><span id="star-count">&nbsp;</span>&nbsp;
+              <i class='bx bx-broadcast'></i><span class="repo-info" id="watcher-count">&nbsp;</span>&nbsp;
+              <i class='bx bx-git-repo-forked'></i><span class="repo-info" id="fork-count">&nbsp;</span>&nbsp;
+            </p>
+          </div>
+        </div>
         <div id="command-selector">
           <div id="download-cmd-option" class="selected" onclick="selectDownload();">Download & Install</div>
           <div id="clone-cmd-option" class="" onclick="selectClone();">Clone Source</div>
@@ -91,12 +93,10 @@
         <p style="color:#666;font-size:16px;"><i>Last Updated:&nbsp;<span class="repo-info" id="last-updated">&nbsp;</span></i></p>
     </div>
   </main>
-  <div id="footer-container">
-    <footer>
-      <p id="footer-text">
-        All related assets are copyright.<br/>&copy; Easter Company. All rights reserved.
-      </p>
-    </footer>
-  </div>
+  <footer>
+    <p id="footer-text">
+      All related assets are copyright<br/>&copy; Easter Company, all rights reserved.
+    </p>
+  </footer>
 </body>
 </html>

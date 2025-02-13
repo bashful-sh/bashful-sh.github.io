@@ -2,36 +2,24 @@
 *
 */
 
+#detail {
+  min-width: 200px;
+  width: 90vw;
+  max-width: 968px;
+  padding: 0 1vw;
+}
+
 #preview {
   display: block;
   overflow: hidden;
   border: 1px solid #000;
-  border-radius: 18px;
+  border-radius: 12px;
   box-shadow: 0 0 24px #00000075;
-}
-
-#preview>img {
-  display: block;
-  justify-self: center;
-  width: 20vmin;
-  height: 20vmin;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-@media only screen and (min-width: 1000px) {
-  #preview>img {
-    width: 12.5vmin;
-    height: 12.5vmin;
-    border-radius: 8px;
-  }
-}
-
-#detail {
-  min-width: 250px;
-  width: 80%;
-  max-width: 720px;
-  padding: 0 1.25vmin;
+  min-width: 96px;
+  width: 20vw;
+  min-height: 96px;
+  height: auto;
+  margin: 6px 2vw auto 0;
 }
 
 #command-selector {
