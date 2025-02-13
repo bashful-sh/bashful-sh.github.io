@@ -26,27 +26,24 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
   <link rel="stylesheet" href="static/css/background.css">
-  <link rel="stylesheet" href="static/css/body.css">
   <link rel="stylesheet" href="static/css/button.css">
-  <link rel="stylesheet" href="static/css/cnt.css">
   <link rel="stylesheet" href="static/css/font.css">
   <link rel="stylesheet" href="static/css/footer.css">
   <link rel="stylesheet" href="static/css/glass.css">
   <link rel="stylesheet" href="static/css/h.css">
   <link rel="stylesheet" href="static/css/html.css">
-  <link rel="stylesheet" href="static/css/input.css">
   <link rel="stylesheet" href="static/css/img.css">
+  <link rel="stylesheet" href="static/css/input.css">
   <link rel="stylesheet" href="static/css/main.css">
   <link rel="stylesheet" href="static/css/nav.css">
   <link rel="stylesheet" href="static/css/p.css">
-  <link rel="stylesheet" href="static/css/root.css">
-  <link rel="stylesheet" href="static/css/section.css">
+  <link rel="stylesheet" href="static/css/project.css">
   <script src="static/js/cmd.js"></script>
   <script src="static/js/git.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
-  <div class='hero'>
+  <div class='background'>
   </div>
   <div id="nav-container" class="glass">
     <nav>
@@ -61,36 +58,38 @@
       </div>
     </nav>
   </div>
-  <main class="glass">
-    <div id="detail">
-        <div style="display:flex;flex-direction:row;">
-          <img id="preview" src="static/assets/logo/bashful-sh_logo.jpg" alt="bashful-sh logo" width="15vw" height="15vw">
-          <div>
-            <h2>Bashful&nbsp;<p style="color:#666;font-size:16px;">By Bashful-sh</p></h2>
-            <p>A terminal extension used for bash profile and package management with Linux, primarily Debian &amp; Ubuntu based systems. Now includes local AI, ML, LLM integrations such as the <code>gcode</code> command for generating quick code snippets.</p>
-            <p style="margin-bottom:3.25vh;">
-              <i class='bx bxs-star'></i><span id="star-count">&nbsp;</span>&nbsp;
-              <i class='bx bx-broadcast'></i><span class="repo-info" id="watcher-count">&nbsp;</span>&nbsp;
-              <i class='bx bx-git-repo-forked'></i><span class="repo-info" id="fork-count">&nbsp;</span>&nbsp;
-            </p>
+  <main>
+    <div id="project" class="glass">
+      <div id="content">
+          <div id="info" style="display:flex;flex-direction:row;">
+            <img id="preview" src="static/assets/logo/bashful-sh_logo.jpg" alt="bashful-sh logo" width="15vw" height="15vw">
+            <div>
+              <h2>Bashful&nbsp;<p style="color:#666;font-size:16px;">By Bashful-sh</p></h2>
+              <p>A terminal extension used for bash profile and package management with Linux, primarily Debian &amp; Ubuntu based systems. Now includes local AI, ML, LLM integrations such as the <code>gcode</code> command for generating quick code snippets.</p>
+              <p style="margin-bottom:3.25vh;">
+                <i class='bx bxs-star'></i><span id="star-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-broadcast'></i><span class="repo-info" id="watcher-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-git-repo-forked'></i><span class="repo-info" id="fork-count">&nbsp;</span>&nbsp;
+              </p>
+            </div>
           </div>
+          <div id="command-selector">
+            <div id="download-cmd-option" class="selected" onclick="selectDownload();">Download & Install</div>
+            <div id="clone-cmd-option" class="" onclick="selectClone();">Clone Source</div>
+            <button id="copy-button" title="Copy to Clipboard" onclick="selectCopy();">
+              <i class='bx bx-copy'></i>
+            </button>
+          </div>
+          <div id="command-snippet">
+            <code id="command-snippet-el">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
+          </div>
+          <div id="options">
+            <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
+            <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
+            <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
+          </div>
+          <p style="color:#666;font-size:16px;"><i>Last Updated:&nbsp;<span class="repo-info" id="last-updated">&nbsp;</span></i></p>
         </div>
-        <div id="command-selector">
-          <div id="download-cmd-option" class="selected" onclick="selectDownload();">Download & Install</div>
-          <div id="clone-cmd-option" class="" onclick="selectClone();">Clone Source</div>
-          <button id="copy-button" title="Copy to Clipboard" onclick="selectCopy();">
-            <i class='bx bx-copy'></i>
-          </button>
-        </div>
-        <div id="command-snippet">
-          <code id="command-snippet-el">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
-        </div>
-        <div id="options">
-          <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
-        </div>
-        <p style="color:#666;font-size:16px;"><i>Last Updated:&nbsp;<span class="repo-info" id="last-updated">&nbsp;</span></i></p>
     </div>
   </main>
   <footer>
