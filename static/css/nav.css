@@ -17,6 +17,14 @@ nav {
   max-height: 100%;
 }
 
+@media only screen and (min-width: 1000px) {
+  nav {
+    min-width: 868px;
+    width: 100%;
+    max-width: 1368px;
+  }
+}
+
 #nav-container {
   display: flex;
   flex-direction: column;
