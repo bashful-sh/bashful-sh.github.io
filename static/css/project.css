@@ -128,11 +128,13 @@
   max-width: 100%;
   padding: 1.25vmin 0;
 }
+
 #options>*>*{
   min-width: 100%;
   width: 100%;
   max-width: 100%;
 }
+
 @media (min-width: 1000px) {
   #options {
     flex-direction: row;
