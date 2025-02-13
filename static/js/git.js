@@ -5,20 +5,25 @@
 const repoOwner = "bashful-sh";
 const repoName = "bashful";
 const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}`;
+const setElement = (id, text) => document.getElementById(id).textContent = ` ${text}`;
 
 fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
+    console.log(data);
     const starCount = data.stargazers_count;
+    const watcherCount = data.watchers_count;
     const forkCount = data.forks_count;
-    const watcherCount = data.subscribers_count;
-    document.getElementById("star-count").textContent = starCount;
-    document.getElementById("fork-count").textContent = forkCount;
-    //document.getElementById("watcher-count").textContent = watcherCount;
+    const lastUpdate = new Date(data.updated_at);
+    setElement("star-count", starCount);
+    setElement("watcher-count", watcherCount);
+    setElement("fork-count", forkCount);
+    setElement("last-updated", lastUpdate.toLocaleDateString("en-GB"));
   })
   .catch(error => {
     console.error("Error fetching repo info:", error);
-    document.getElementById("star-count").textContent = "n/a";
-    document.getElementById("fork-count").textContent = "n/a";
-    //document.getElementById("watcher-count").textContent = "Error";
+    setElement("star-count", "n/a");
+    setElement("watcher-count", "n/a");
+    setElement("fork-count", "n/a");
+    setElement("last-updated", "n/a");
   });

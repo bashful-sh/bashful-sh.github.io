@@ -70,12 +70,14 @@
         <h3>bashful-sh</h3>
         <p>A terminal extension primarily used for bash profile and package management with Linux (Debian/Ubuntu) based systems.</p>
         <p style="margin-bottom:3.25vh;">
-          <i class='bx bxs-star'>&nbsp;</i><span id="star-count">...</span>&nbsp;
-          <i class='bx bx-git-repo-forked'></i>&nbsp;<span class="repo-info" id="fork-count">...</span>
+          <i class='bx bxs-star'></i><span id="star-count">&nbsp;</span>&nbsp;
+          <i class='bx bx-broadcast'></i><span class="repo-info" id="watcher-count">&nbsp;</span>&nbsp;
+          <i class='bx bx-git-repo-forked'></i><span class="repo-info" id="fork-count">&nbsp;</span>&nbsp;
+          <i class='bx bxs-calendar'></i><span class="repo-info" id="last-updated">&nbsp;</span>
         </p>
         <div id="command-selector">
-          <pre id="download-cmd-option" class="selected" onclick="selectDownload();">Download & Install</pre>
-          <pre id="clone-cmd-option" class="" onclick="selectClone();">Clone Source</pre>
+          <div id="download-cmd-option" class="selected" onclick="selectDownload();">Download & Install</div>
+          <div id="clone-cmd-option" class="" onclick="selectClone();">Clone Source</div>
           <button id="copy-button" title="Copy to Clipboard" onclick="selectCopy();">
             <i class='bx bx-copy'></i>
           </button>
