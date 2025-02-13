@@ -21,6 +21,9 @@ button {
   vertical-align: middle;
   white-space: nowrap;
   color: #fff;
+  font-size: 13px;
+  font-family: "Poppins";
+  font-weight: normal;
   border: 1px solid #DDDFFF;
   outline: none;
   border-radius: 0.25rem;

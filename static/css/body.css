@@ -23,7 +23,7 @@ body {
   height: 100vh;
   max-height: 100vh;
 
-  font-family: "default", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.5;

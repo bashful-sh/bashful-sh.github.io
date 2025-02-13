@@ -3,7 +3,7 @@
  */
 const cmdSnips = [
   `curl -fsSL https://bashful-sh.github.io/install.sh | bash`,
-  `git clone git@github.com:bashful-sh/bashful.git`
+  `git clone git@github.com:bashful-sh/bashful.git ~/.bashful`
 ]
 
 const selectDownload = () => {
@@ -37,7 +37,6 @@ const selectCopy = () => {
   const codeSnippet = document.getElementById("command-snippet-el");
   const textToCopy = codeSnippet.innerText;
   writeClipboardText(textToCopy).then(() => {
-      // Optional: Provide visual feedback (e.g., change icon)
       copyButton.innerHTML = "<i class='bx bx-check' style='color: green;'></i><code style='margin:0;padding:0;font-size:11px;'>Copied!</code>"; // Success icon
       setTimeout(() => {
         copyButton.innerHTML = "<i class='bx bx-copy'></i>"; // Back to copy icon
@@ -45,7 +44,6 @@ const selectCopy = () => {
     })
     .catch(err => {
       console.error("Failed to copy: ", err);
-      // Optional: Display an error message to the user
       copyButton.innerHTML = "<i class='bx bx-x' style='color: red;'></i>"; // Error icon
       setTimeout(() => {
         copyButton.innerHTML = "<i class='bx bx-copy'></i>"; // Back to copy icon
