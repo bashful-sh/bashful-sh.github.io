@@ -23,9 +23,9 @@ main {
 @media only screen and (min-width: 1000px) {
   main {
     flex-direction: column;
-    min-width: 798px;
+    min-width: 868px;
     width: 100%;
-    max-width: 846px;
+    max-width: 1368px;
     min-height: 80%;
     height: 80%;
     max-height: 1080px;
