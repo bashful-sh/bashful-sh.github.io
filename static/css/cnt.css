@@ -16,10 +16,10 @@
   border-radius: 12px;
   box-shadow: 0 0 24px #00000075;
   min-width: 96px;
-  width: 20vw;
+  width: 20vmin;
   min-height: 96px;
   height: auto;
-  margin: 6px 2vw auto 0;
+  margin: 0 2vmin auto 2vmin;
 }
 
 #command-selector {
