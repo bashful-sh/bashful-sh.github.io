@@ -10,7 +10,7 @@ const setElement = (id, text) => document.getElementById(id).textContent = ` ${t
 fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
-    console.log(data);
+    console.log("Fetched repo info:", data);
     const starCount = data.stargazers_count;
     const watcherCount = data.watchers_count;
     const forkCount = data.forks_count;
