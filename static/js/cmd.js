@@ -3,7 +3,7 @@
  */
 const cmdSnips = [
   `curl -fsSL https://bashful-sh.github.io/install.sh | bash`,
-  `git clone git@github.com:bashful-sh/bashful.git ~/.bashful`
+  `curl -fsSL https://bashful-sh.github.io/install-dev.sh | bash`,
 ]
 
 const selectDownload = () => {
