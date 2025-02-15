@@ -13,7 +13,7 @@ source "$HOME/.bashrc"
 clear
 
 # bashful-sh/.github
-git clone git@github.com:bashful-sh/.github.git "$HOME/.bashful/.github"
+git clone git@github.com:bashful-sh/.github.git "$HOME/.bashful/.github-public"
 
 # bashful-sh/.github-private
 git clone git@github.com:bashful-sh/.github-private.git "$HOME/.bashful/.github-private"
