@@ -18,7 +18,7 @@ fetch(apiUrl)
     setElement("star-count", starCount);
     setElement("watcher-count", watcherCount);
     setElement("fork-count", forkCount);
-    setElement("last-updated", lastUpdate.toLocaleDateString("en-GB"));
+    setElement("last-updated", lastUpdate.toLocaleString());
   })
   .catch(error => {
     console.error("Error fetching repo info:", error);
