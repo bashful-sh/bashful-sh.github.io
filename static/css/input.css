@@ -6,14 +6,21 @@ input {
   width: 286px;
   height: 32px;
 
+  padding: 0 12px;
+
   font-family: default;
   font-weight: normal;
   font-size: 18px;
 
-  padding: 0 12px;
-  outline: none;
   color: #FFF;
-  border: 1px solid #00000099;
-  border-radius: 6px;
-  background-color: #20202933;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  border-bottom-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
