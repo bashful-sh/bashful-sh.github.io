@@ -8,11 +8,14 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
   min-width: 126px;
   padding: 8px 24px;
   margin: 6px 12px 6px 0;
-  font-family: default;
-  font-size: 0.95rem;
+
+  color: #fff;
+  font-size: 13px;
+  font-family: "Poppins";
   font-weight: normal;
   line-height: 1.5;
   text-align: center;
@@ -20,20 +23,17 @@ button {
   text-decoration: none;
   vertical-align: middle;
   white-space: nowrap;
-  color: #fff;
-  font-size: 13px;
-  font-family: "Poppins";
-  font-weight: normal;
+
   outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+
   transition: all 0.3s ease-in-out;
 
   background: rgba(0, 0, 0, 0.45);
-  border-radius: 16px;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 0, 0, 0.45);
-
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
