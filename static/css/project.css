@@ -63,7 +63,7 @@
 }
 
 #command-selector>div {
-  opacity: 0.33;
+  opacity: 0.66;
   cursor: pointer;
   user-select: none;
   width: fit-content;
@@ -72,11 +72,16 @@
   font-family: "Poppins";
   font-size: 13px;
   font-weight: normal;
-  background-color: #202029;
-  border: 1px solid #DDDFFF;
+
+  border: 1px solid rgba(0, 0, 0, 0.45);
   border-bottom-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 #command-selector>.selected {
@@ -93,13 +98,18 @@
   color: #ffffff;
   font-family: "Poppins";
   font-size: 13px;
-  background-color: #202029;
-  border: 1px solid #DDDFFF;
+
+  border: 1px solid rgba(0, 0, 0, 0.45);
   border-bottom-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 #command-snippet {
@@ -109,12 +119,14 @@
   color: #ffffff;
   font-family: "Poppins";
   font-size: 16px;
-  background-color: #202029;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  box-shadow: 0 1px 12px #00000099;
+
+  background: rgba(0, 0, 0, 0.45);
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.45);
 }
 
 #options {

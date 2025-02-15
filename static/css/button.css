@@ -24,12 +24,16 @@ button {
   font-size: 13px;
   font-family: "Poppins";
   font-weight: normal;
-  border: 1px solid #DDDFFF;
   outline: none;
-  border-radius: 0.25rem;
-  background-color: #202029;
-  box-shadow: 0 1px 12px #00000066;
   transition: all 0.3s ease-in-out;
+
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 16px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.45);
+
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
