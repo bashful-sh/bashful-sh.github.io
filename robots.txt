@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bashful-sh.github.io/sitemap.xml
