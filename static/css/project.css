@@ -88,7 +88,7 @@
   opacity: 1 !important;
   padding: 6px 24px;
   box-shadow: 0 -1px 12px #00000099;
-  border-color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 #command-selector>button {
@@ -100,7 +100,7 @@
   font-family: "Poppins";
   font-size: 13px;
 
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-bottom-width: 0px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -125,7 +125,7 @@
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 4px;
