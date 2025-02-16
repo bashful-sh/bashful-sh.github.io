@@ -1,3 +1,18 @@
+User-agent: Googlebot
+Disallow: /static/
+
+User-agent: Googlebot
+Disallow: /README.md
+
+User-agent: Googlebot
+Disallow: /LICENSE.md
+
+User-agent: Googlebot
+Disallow: /install.sh
+
+User-agent: Googlebot
+Disallow: /install-dev.sh
+
 User-agent: *
 Allow: /
 
