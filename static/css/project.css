@@ -136,7 +136,7 @@
 #options {
   display: flex;
   overflow: auto;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: left;
   justify-content: flex-start;
   min-width: 100%;
