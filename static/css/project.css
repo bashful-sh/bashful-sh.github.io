@@ -5,7 +5,7 @@
 #project {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: auto;
   align-self: center;
   align-items: center;
   vertical-align: middle;
