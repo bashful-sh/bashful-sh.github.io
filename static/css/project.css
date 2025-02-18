@@ -14,7 +14,7 @@
   justify-content: flex-start;
 
   margin: 0 0 0 0;
-  padding: 7.5vh 0 2.5vh 0;
+  padding: 64px 0 0 0;
 
   min-width: 100%;
   width: 100%;
@@ -43,6 +43,8 @@
   min-width: 200px;
   width: 90vw;
   max-width: 968px;
+
+  padding: 0 0 64px 0;
 }
 
 /* PROJECT HEADER */
@@ -114,14 +116,15 @@
   }
 }
 
-#command-selector {
+/* PROJECT DOWNLOAD/INSTALL/SPONSOR SECTION */
+.command-selector {
   z-index: -1;
   display: flex;
   flex-direction: row;
   margin-top: 2.5vmin;
 }
 
-#command-selector>div {
+.command-selector>div {
   opacity: 0.66;
   cursor: pointer;
   user-select: none;
@@ -143,14 +146,14 @@
   -webkit-backdrop-filter: blur(20px);
 }
 
-#command-selector>.selected {
+.command-selector>.selected {
   opacity: 1 !important;
   padding: 6px 24px;
   box-shadow: 0 -1px 12px #00000099;
   border-color: rgba(255, 255, 255, 0.25);
 }
 
-#command-selector>button {
+.command-selector>button {
   opacity: 1;
   cursor: pointer;
   user-select: none;
@@ -172,7 +175,7 @@
   -webkit-backdrop-filter: blur(20px);
 }
 
-#command-snippet {
+.command-snippet {
   z-index: 1;
   padding: 12px 24px;
   margin-bottom: 16px;
@@ -191,7 +194,7 @@
   border-bottom-right-radius: 4px;
 }
 
-#options {
+.options {
   display: flex;
   overflow: auto;
   flex-direction: column;
@@ -203,7 +206,7 @@
   padding: 1.25vmin 0;
 }
 
-#options>iframe{
+.options>iframe{
   width: 128px;
   margin: 6px 0 6px auto;
   color: #fff;
@@ -231,19 +234,19 @@
   -moz-column-gap: 0.66rem;
        column-gap: 0.66rem;
 }
-#options>*>*,#options>iframe{
+.options>*>*,.options>iframe{
   min-width: 100%;
   width: 100%;
   max-width: 100%;
 }
 
 @media (min-width: 1000px) {
-  #options {
+  .options {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
-  #options>*>*,#options>iframe{
+  .options>*>*,.options>iframe{
     min-width: unset;
     width: unset;
     max-width: unset;
@@ -253,8 +256,6 @@
 #copy-button {
   cursor: pointer;
   padding: 5px;
-  border: none;
-  background: none;
   font-size: 1.2rem;
-  color: #333;
+  color: #666;
 }
