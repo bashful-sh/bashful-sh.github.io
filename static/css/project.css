@@ -1,8 +1,10 @@
 /*
-*
+* static/css/project.css
+* contains all styling classes for a project object.
 */
 
-#project {
+/* PROJECT CONTAINER */
+.project {
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -23,9 +25,8 @@
 
   border-radius: 0px!important;
 }
-
 @media only screen and (min-width: 1000px) {
-  #project {
+  .project {
     justify-content: center;
     min-width: 868px;
     width: 100%;
@@ -37,23 +38,80 @@
   }
 }
 
-#content {
+/* PROJECT CONTENT CONTAINER */
+.project>.content {
   min-width: 200px;
   width: 90vw;
   max-width: 968px;
 }
 
-#preview {
-  display: block;
-  overflow: hidden;
+/* PROJECT HEADER */
+.project>.content>.preview>.info>.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+}
+
+.project>.content>.preview>.info>.header>img {
+  width: 36px;
+  height: 36px;
+
+  margin: 4px 12px 4px 0;
+  padding: 0 0 0 0;
+
   border: 1px solid #000;
-  border-radius: 12px;
-  box-shadow: 0 0 24px #00000075;
-  min-width: 96px;
-  width: 20vmin;
-  min-height: 96px;
-  height: auto;
-  margin: 0 2vmin auto 2vmin;
+  border-radius: 4px;
+  box-shadow: 1px 1px 24px #101010;
+}
+@media (min-width: 1000px) {
+  .project>.content>.preview>.info>.header>img {
+  }
+}
+
+.project>.content>.preview>.info>.header>h2 {
+  color:#DDD;
+  font-size:20px;
+}
+
+.project>.content>.preview>.info>.header>h2>p {
+  color:#666;
+  font-size:16px;
+}
+
+.project>.content>.preview>.info>p {
+  font-size: 16px;
+}
+@media (min-width: 1000px) {
+  .project>.content>.preview>.info>p {
+    font-size: 18px;
+  }
+}
+
+
+/* PROJECT STATISTICS SECTION */
+.project>.content>.preview>.info>.stats {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25vmin 0;
+  font-size: 16px;
+}
+.project>.content>.preview>.info>.stats>.git-stats {
+  width: 100%;
+}
+.project>.content>.preview>.info>.stats>.last-updated {
+  color: #666;
+  text-align: left;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .project>.content>.preview>.info>.stats {
+    flex-direction: row;
+  }
+  .project>.content>.preview>.info>.stats>.last-updated {
+    text-align: right;
+  }
 }
 
 #command-selector {
@@ -143,10 +201,6 @@
   width: 100%;
   max-width: 100%;
   padding: 1.25vmin 0;
-}
-
-#options>p {
-  margin: auto auto;
 }
 
 #options>iframe{
