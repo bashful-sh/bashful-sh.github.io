@@ -39,11 +39,14 @@ body {
 
 main {
   z-index: 1;
+  overflow: auto;
   display: flex;
   flex-direction: column;
 
   width: 100vw;
   height: 100vh;
+
+  padding: 10vh 0 0 0;
 
   color: #dfdfdf;
   background-color: transparent;

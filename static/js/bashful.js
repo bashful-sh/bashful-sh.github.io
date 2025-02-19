@@ -7,20 +7,24 @@ const cmdSnips = [
 ]
 
 const selectDownload = () => {
-  const el = document.querySelector("#command-snippet-el");
-  const del = document.querySelector("#download-cmd-option");
-  const cel = document.querySelector("#clone-cmd-option");
+  const el = document.querySelector("#bashful-selected-command");
   el.innerText = cmdSnips[0];
+
+  const del = document.querySelector("#download-cmd-option-bashful");
   del.classList.add("selected");
+
+  const cel = document.querySelector("#clone-cmd-option-bashful");
   cel.classList.remove("selected");
 }
 
 const selectClone = () => {
-  const el = document.querySelector("#command-snippet-el");
-  const del = document.querySelector("#download-cmd-option");
-  const cel = document.querySelector("#clone-cmd-option");
-  el.innerText = cmdSnips[1]
+  const el = document.querySelector("#bashful-selected-command");
+  el.innerText = cmdSnips[1];
+
+  const del = document.querySelector("#download-cmd-option-bashful");
   del.classList.remove("selected");
+
+  const cel = document.querySelector("#clone-cmd-option-bashful");
   cel.classList.add("selected");
 }
 
@@ -33,8 +37,8 @@ async function writeClipboardText(text) {
 }
 
 const selectCopy = () => {
-  const copyButton = document.getElementById("copy-button");
-  const codeSnippet = document.getElementById("command-snippet-el");
+  const copyButton = document.querySelector("#copy-button-bashful");
+  const codeSnippet = document.querySelector("#bashful-selected-command");
   const textToCopy = codeSnippet.innerText;
   writeClipboardText(textToCopy).then(() => {
       copyButton.innerHTML = "<i class='bx bx-check' style='color: green;'></i><code style='margin:0;padding:0;font-size:11px;'>Copied!</code>"; // Success icon

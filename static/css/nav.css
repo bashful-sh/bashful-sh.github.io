@@ -37,7 +37,7 @@ nav {
   max-height: 100%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1300px) {
   nav {
     min-width: 868px;
     width: 100%;

@@ -3,8 +3,7 @@
 */
 
 footer {
-  z-index:10;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
@@ -12,7 +11,7 @@ footer {
   justify-content: center;
   width: fit-content;
   height: 5vmin;
-  margin-top: -5vmin;
+  margin-top: auto;
   background-color: transparent;
 }
 
@@ -22,10 +21,4 @@ footer {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 13px;
-}
-
-@media (min-height: 780px) {
-  footer {
-    display: flex;
-  }
 }

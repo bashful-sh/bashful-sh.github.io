@@ -38,8 +38,9 @@
   <link rel="stylesheet" href="static/css/nav.css">
   <link rel="stylesheet" href="static/css/p.css">
   <link rel="stylesheet" href="static/css/project.css">
-  <script src="static/js/cmd.js"></script>
+  <script src="static/js/bashful.js"></script>
   <script src="static/js/git.js"></script>
+  <script src="static/js/project.js"></script>
   <script src="static/js/search.js"></script>
 </head>
 <body>
@@ -59,7 +60,12 @@
     </nav>
   </div>
   <main>
-    <div class="project glass selected-project">
+    <h1 style="text-align:center;margin:2.5vmax 0 0 0;font-size:22px;color:#ddd">Browse Our Applications</h1>
+    <h2 style="text-align:center;margin:0 0 2.5vmax 0;font-size:18px;color:#999">Engineering, Education, Enterprise, Education</h2>
+    <div class="project selected-project glass">
+      <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
+          <i class='bx bx-x'></i>
+      </div>
       <div class="content">
         <div class="preview">
           <div class="info">
@@ -79,14 +85,14 @@
           </div>
         </div>
         <div class="command-selector">
-          <div id="download-cmd-option" class="selected" onclick="selectDownload();">Download & Install</div>
-          <div id="clone-cmd-option" class="" onclick="selectClone();">Clone Source</div>
-          <button id="copy-button" title="Copy to Clipboard" onclick="selectCopy();">
+          <div id="download-cmd-option-bashful" class="download-cmd-option selected" onclick="selectDownload();">Download & Install</div>
+          <div id="clone-cmd-option-bashful" class="clone-cmd-option" onclick="selectClone();">Clone Source</div>
+          <button id="copy-button-bashful" class="copy-button" title="Copy to Clipboard" onclick="selectCopy();">
             <i class='bx bx-copy'></i>
           </button>
         </div>
         <div class="command-snippet">
-          <code id="command-snippet-el">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
+          <code id="bashful-selected-command">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
         </div>
         <div class="options">
           <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
@@ -96,11 +102,11 @@
         </div>
       </div>
     </div>
+    <footer>
+      <p id="footer-text">
+        All related assets are copyright<br/>&copy; Easter Company, all rights reserved.
+      </p>
+    </footer>
   </main>
-  <footer>
-    <p id="footer-text">
-      All related assets are copyright<br/>&copy; Easter Company, all rights reserved.
-    </p>
-  </footer>
 </body>
 </html>

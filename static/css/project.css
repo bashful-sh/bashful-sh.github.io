@@ -6,48 +6,68 @@
 /* PROJECT CONTAINER */
 .project {
   display: flex;
+  position: relative;
   flex-direction: column;
-  overflow: auto;
   align-self: center;
   align-items: center;
   vertical-align: middle;
-  justify-content: flex-start;
+  justify-content: center;
 
-  margin: 0 0 0 0;
-  padding: 164px 0;
+  margin: 16px 0;
+  padding: 32px 2.5vw;
 
-  min-width: 100%;
-  width: 100%;
-  max-width: 1298px;
+  width: calc(100vw - 5vw);
+  max-width: 1298px !important;
+  min-height: fit-content !important;
 
-  min-height: 100%;
-  height: 100%;
-  max-height: 100%;
-
-  border-radius: 0px!important;
+  transition: .33s ease-in-out !important;
 }
-@media only screen and (min-width: 1000px) {
-  .project {
-    justify-content: center;
-
-    padding: 0 164px;
-
-    min-width: 868px;
-    width: fit-content;
-    max-width: 1368px;
-
-    min-height: 80%;
-    height: fit-content;
-    max-height: 1080px;
-
-    border-radius: 6px!important;
-  }
+.project>*,.project>*>*{
+  transition: .33s ease-in-out !important;
+}
+.project>.toggle-project-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.project>.toggle-project-button>* {
+  display: none;
 }
 .selected-project {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  cursor: unset !important;
+  justify-content: flex-start !important;
+  margin: 32px 0 !important;
+  padding: 32px !important;
+  width: calc(100vw - 2.5vw);
+  max-width: 1298px !important;
+}
+@media only screen and (min-width: 1300px) {
+  .selected-project {
+    justify-content: center !important;
+    overflow: hidden;
+    min-height: 50vh !important;
+    height: fit-content !important;
+  }
+}
+.selected-project>.toggle-project-button {
+  position: fixed !important;
+  top: 8px !important;
+  right: 16px !important;
+  width: unset !important;
+  height: unset !important;
+  font-size: 24px;
+  background: unset !important;
+}
+.selected-project>.toggle-project-button>* {
+  display: block !important;
+}
+.selected-project>.toggle-project-button:hover>i {
+  color: #333;
+  background: #666;
+  box-shadow: 0 0 20px #999;
 }
 
 /* PROJECT CONTENT CONTAINER */
@@ -63,7 +83,7 @@
   flex-direction: row;
   width: 100%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
 }
 
 .project>.content>.preview>.info>.header>img {
@@ -77,7 +97,7 @@
   border-radius: 4px;
   box-shadow: 1px 1px 24px #101010;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .project>.content>.preview>.info>.header>img {
   }
 }
@@ -95,7 +115,7 @@
 .project>.content>.preview>.info>p {
   font-size: 16px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .project>.content>.preview>.info>p {
     font-size: 18px;
   }
@@ -106,7 +126,7 @@
 .project>.content>.preview>.info>.stats {
   display: flex;
   flex-direction: column;
-  padding: 1.25vmin 0;
+  padding: 1.25vmin 0 0 0;
   font-size: 16px;
 }
 .project>.content>.preview>.info>.stats>.git-stats {
@@ -117,7 +137,7 @@
   text-align: left;
   width: 100%;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1300px) {
   .project>.content>.preview>.info>.stats {
     flex-direction: row;
   }
@@ -127,14 +147,20 @@
 }
 
 /* PROJECT DOWNLOAD/INSTALL/SPONSOR SECTION */
-.command-selector {
+.project>.content>.command-selector,
+.project>.content>.command-snippet,
+.project>.content>.options {
+  display: none;
+}
+
+.selected-project>.content>.command-selector {
   z-index: -1;
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   margin-top: 2.5vmin;
 }
 
-.command-selector>div {
+.selected-project>.content>.command-selector>div {
   opacity: 0.66;
   cursor: pointer;
   user-select: none;
@@ -156,14 +182,14 @@
   -webkit-backdrop-filter: blur(20px);
 }
 
-.command-selector>.selected {
+.selected-project>.content>.command-selector>.selected {
   opacity: 1 !important;
   padding: 6px 24px;
   box-shadow: 0 -1px 12px #00000099;
   border-color: rgba(255, 255, 255, 0.25);
 }
 
-.command-selector>button {
+.selected-project>.content>.command-selector>button {
   opacity: 1;
   cursor: pointer;
   user-select: none;
@@ -185,8 +211,9 @@
   -webkit-backdrop-filter: blur(20px);
 }
 
-.command-snippet {
+.selected-project>.content>.command-snippet {
   z-index: 1;
+  display: flex !important;
   padding: 12px 24px;
   margin-bottom: 16px;
   color: #ffffff;
@@ -204,8 +231,8 @@
   border-bottom-right-radius: 4px;
 }
 
-.options {
-  display: flex;
+.selected-project>.content>.options {
+  display: flex !important;
   overflow: auto;
   flex-direction: column;
   align-items: left;
@@ -216,8 +243,7 @@
   padding: 1.25vmin 0;
 }
 
-.options>iframe{
-  width: 128px;
+.selected-project>.content>.options>iframe{
   margin: 6px 0 6px auto;
   color: #fff;
   font-size: 13px;
@@ -244,26 +270,27 @@
   -moz-column-gap: 0.66rem;
        column-gap: 0.66rem;
 }
-.options>*>*,.options>iframe{
+.selected-project>.content>.options>*>*,
+.selected-project>.content>.options>iframe{
   min-width: 100%;
   width: 100%;
   max-width: 100%;
 }
-
-@media (min-width: 1000px) {
-  .options {
+@media (min-width: 1300px) {
+  .selected-project>.content>.options {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
   }
-  .options>*>*,.options>iframe{
+  .selected-project>.content>.options>*>*,
+  .selected-project>.content>.options>iframe{
     min-width: unset;
     width: unset;
     max-width: unset;
   }
 }
 
-#copy-button {
+.selected-project>.content>.copy-button {
   cursor: pointer;
   padding: 5px;
   font-size: 1.2rem;
