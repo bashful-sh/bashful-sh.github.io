@@ -21,6 +21,10 @@
   min-height: fit-content !important;
 
   transition: .33s ease-in-out !important;
+  box-shadow: 1px 1px 12px #111;
+}
+.project:hover {
+  box-shadow: 1px 1px 12px #ddd;
 }
 .project>*,.project>*>*{
   transition: .33s ease-in-out !important;
@@ -43,6 +47,7 @@
   padding: 32px !important;
   width: calc(100vw - 2.5vw);
   max-width: 1298px !important;
+  box-shadow: 1px 1px 12px #111 !important;
 }
 @media only screen and (min-width: 1300px) {
   .selected-project {
