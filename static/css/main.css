@@ -44,12 +44,19 @@ main {
   flex-direction: column;
 
   width: 100vw;
+
+  min-height: 500px;
   height: 100vh;
 
-  padding: 10vh 0 2.5vh 0;
+  padding: calc(10vh + 64px) 0 2.5vh 0;
 
   color: #dfdfdf;
   background-color: transparent;
+}
+
+main>h1,main>h2 {
+  user-select: none;
+  max-width: 98vw;
 }
 
 /* width */

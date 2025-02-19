@@ -36,7 +36,6 @@ nav {
   height: 100%;
   max-height: 100%;
 }
-
 @media only screen and (min-width: 1300px) {
   nav {
     min-width: 868px;
@@ -46,9 +45,15 @@ nav {
 }
 
 #nav-title {
+  display: none;
   align-self: center;
   align-items: center;
   vertical-align: center;
+}
+@media only screen and (min-width: 600px) {
+  #nav-title {
+    display: flex;
+  }
 }
 
 nav>div {

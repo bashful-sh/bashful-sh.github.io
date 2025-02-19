@@ -17,6 +17,7 @@ footer {
 }
 
 #footer-text {
+  user-select: none;
   color: #fff;
   text-align: center;
   font-family: "Poppins";
