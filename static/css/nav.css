@@ -45,6 +45,7 @@ nav {
 }
 
 #nav-title {
+  user-select: none;
   display: none;
   align-self: center;
   align-items: center;
