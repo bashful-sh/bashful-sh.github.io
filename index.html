@@ -39,7 +39,6 @@
   <link rel="stylesheet" href="static/css/p.css">
   <link rel="stylesheet" href="static/css/project.css">
   <script src="static/js/bashful.js"></script>
-  <script src="static/js/git.js"></script>
   <script src="static/js/project.js"></script>
   <script src="static/js/search.js"></script>
 </head>
@@ -76,18 +75,18 @@
             <p>A terminal extension used as a superset for bash. With bash profile and package management for Linux (Debian & Ubuntu) based systems. Now also includes local AI, ML, LLM integrations for developers.</p>
             <div class="stats">
               <p class="git-stats">
-                <i class='bx bxs-star'></i><span id="star-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-broadcast'></i><span id="watcher-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-git-repo-forked'></i><span id="fork-count">&nbsp;</span>&nbsp;
+                <i class='bx bxs-star'></i><span id="bashful-star-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-broadcast'></i><span id="bashful-watcher-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-git-repo-forked'></i><span id="bashful-fork-count">&nbsp;</span>&nbsp;
               </p>
-              <p class="last-updated"><i>Last Updated:&nbsp;<span id="last-updated">&nbsp;</span></i></p>
+              <p class="last-updated"><i>Last Updated:&nbsp;<span id="bashful-last-updated">&nbsp;</span></i></p>
             </div>
           </div>
         </div>
         <div class="command-selector">
-          <div id="download-cmd-option-bashful" class="download-cmd-option selected" onclick="selectDownload();">Download & Install</div>
-          <div id="clone-cmd-option-bashful" class="clone-cmd-option" onclick="selectClone();">Clone Source</div>
-          <button id="copy-button-bashful" class="copy-button" title="Copy to Clipboard" onclick="selectCopy();">
+          <div id="download-cmd-option-bashful" class="download-cmd-option selected" onclick="bashfulSelectDownload();">Download & Install</div>
+          <div id="clone-cmd-option-bashful" class="clone-cmd-option" onclick="bashfulSelectClone();">Clone Source</div>
+          <button id="copy-button-bashful" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('bashful');">
             <i class='bx bx-copy'></i>
           </button>
         </div>
