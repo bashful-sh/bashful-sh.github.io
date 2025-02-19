@@ -39,6 +39,8 @@
   <link rel="stylesheet" href="static/css/p.css">
   <link rel="stylesheet" href="static/css/project.css">
   <script src="static/js/bashful.js"></script>
+  <script src="static/js/cc.js"></script>
+  <script src="static/js/ms.js"></script>
   <script src="static/js/project.js"></script>
   <script src="static/js/search.js"></script>
 </head>
@@ -48,7 +50,7 @@
   <div id="nav-container" class="glass">
     <nav>
       <div style="justify-content:flex-start;">
-        <a href="https://github.com/bashful-sh"><img src="static/assets/logo/bashful-sh_logo.jpg" alt="brand logo"/></a>
+        <a href="/"><img src="static/assets/logo/bashful-sh_logo.jpg" alt="brand logo"/></a>
         <h1 id="nav-title">bashful-sh</h1>
       </div>
       <div style="justify-content:flex-end;">
@@ -59,9 +61,11 @@
     </nav>
   </div>
   <main>
-    <h1 style="width:100%;text-align:center;margin:2.5vmax auto 0 auto;font-size:22px;color:#ddd;">Browse Our Applications</h1>
-    <h2 style="width:100%;text-align:center;margin:0 auto 2.5vmax auto;font-size:18px;color:#999;">Engineering, Education, Enterprise, Entertainment</h2>
-    <div class="project selected-project glass">
+
+    <h1 style="width:100%;text-align:center;margin:2.5vmax auto 0 auto;font-size:22px;color:#ddd;">Download Bashful</h1>
+    <h2 style="width:100%;text-align:center;margin:0 auto 5vmax auto;font-size:18px;color:#999;">discover addons for a modern world.</h2>
+
+    <div class="project glass">
       <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
           <i class='bx bx-x'></i>
       </div>
@@ -97,10 +101,93 @@
           <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
           <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
           <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
-          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor oceaster" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
         </div>
       </div>
     </div>
+
+    <div class="project glass">
+      <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
+          <i class='bx bx-x'></i>
+      </div>
+      <div class="content">
+        <div class="preview">
+          <div class="info">
+            <div class="header">
+              <img src="static/assets/logo/model-server_logo.png" alt="model-server logo"/>
+              <h2>Model Server<p>By Bashful-sh</p></h2>
+            </div>
+            <p id="ms-description">...</p>
+            <div class="stats">
+              <p class="git-stats">
+                <i class='bx bxs-star'></i><span id="ms-star-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-broadcast'></i><span id="ms-watcher-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-git-repo-forked'></i><span id="ms-fork-count">&nbsp;</span>&nbsp;
+              </p>
+              <p class="last-updated"><i>Last Updated:&nbsp;<span id="ms-last-updated">&nbsp;</span></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="command-selector">
+          <div id="download-cmd-option-ms" class="download-cmd-option selected" onclick="selectDownload('ms');">Download & Install</div>
+          <div id="clone-cmd-option-ms" class="clone-cmd-option" onclick="selectClone('ms');">Clone Source</div>
+          <button id="copy-button-ms" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('ms');">
+            <i class='bx bx-copy'></i>
+          </button>
+        </div>
+        <div class="command-snippet">
+          <code id="ms-selected-command">coming soon...</code>
+        </div>
+        <div class="options">
+          <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
+          <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
+          <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
+          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="project glass">
+      <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
+          <i class='bx bx-x'></i>
+      </div>
+      <div class="content">
+        <div class="preview">
+          <div class="info">
+            <div class="header">
+              <img src="static/assets/logo/custom-cursor_logo.png" alt="custom-cursor logo"/>
+              <h2>Custom Cursor<p>By Bashful-sh</p></h2>
+            </div>
+            <p id="cc-description">...</p>
+            <div class="stats">
+              <p class="git-stats">
+                <i class='bx bxs-star'></i><span id="cc-star-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-broadcast'></i><span id="cc-watcher-count">&nbsp;</span>&nbsp;
+                <i class='bx bx-git-repo-forked'></i><span id="cc-fork-count">&nbsp;</span>&nbsp;
+              </p>
+              <p class="last-updated"><i>Last Updated:&nbsp;<span id="cc-last-updated">&nbsp;</span></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="command-selector">
+          <div id="download-cmd-option-cc" class="download-cmd-option selected" onclick="selectDownload('cc');">Download & Install</div>
+          <div id="clone-cmd-option-cc" class="clone-cmd-option" onclick="selectClone('cc');">Clone Source</div>
+          <button id="copy-button-cc" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('cc');">
+            <i class='bx bx-copy'></i>
+          </button>
+        </div>
+        <div class="command-snippet">
+          <code id="cc-selected-command">coming soon...</code>
+        </div>
+        <div class="options">
+          <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
+          <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
+          <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
+          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <p id="footer-text">
         All related assets are copyright<br/>&copy; Easter Company, all rights reserved.

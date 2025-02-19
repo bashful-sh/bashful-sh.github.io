@@ -13,8 +13,8 @@
   vertical-align: middle;
   justify-content: center;
 
-  margin: 2.5vmin 0 2.5vmin 0;
-  padding: 2.5vmin 2.5vw;
+  margin: 0 0 32px 0;
+  padding: 2.5vmax 2.5vmax;
 
   width: calc(100vw - 5vw);
   max-width: 1298px !important;
@@ -43,8 +43,7 @@
 .selected-project {
   cursor: unset !important;
   justify-content: flex-start !important;
-  margin: 32px 0 !important;
-  padding: 32px !important;
+  padding: 3vmax !important;
   width: calc(100vw - 2.5vw);
   max-width: 1298px !important;
   box-shadow: 1px 1px 12px #111 !important;
