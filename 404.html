@@ -59,47 +59,25 @@
     </nav>
   </div>
   <main>
-    <h1 style="width:100%;text-align:center;margin:2.5vmax auto 0 auto;font-size:22px;color:#ddd;">Browse Our Applications</h1>
-    <h2 style="width:100%;text-align:center;margin:0 auto 2.5vmax auto;font-size:18px;color:#999;">Engineering, Education, Enterprise, Entertainment</h2>
-    <div class="project selected-project glass">
-      <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
-          <i class='bx bx-x'></i>
-      </div>
-      <div class="content">
-        <div class="preview">
-          <div class="info">
-            <div class="header">
-              <img src="static/assets/logo/bashful-sh_logo.jpg" alt="bashful-sh logo"/>
-              <h2>Bashful<p>By Bashful-sh</p></h2>
-            </div>
-            <p id="bashful-description">...</p>
-            <div class="stats">
-              <p class="git-stats">
-                <i class='bx bxs-star'></i><span id="bashful-star-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-broadcast'></i><span id="bashful-watcher-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-git-repo-forked'></i><span id="bashful-fork-count">&nbsp;</span>&nbsp;
-              </p>
-              <p class="last-updated"><i>Last Updated:&nbsp;<span id="bashful-last-updated">&nbsp;</span></i></p>
-            </div>
-          </div>
-        </div>
-        <div class="command-selector">
-          <div id="download-cmd-option-bashful" class="download-cmd-option selected" onclick="bashfulSelectDownload();">Download & Install</div>
-          <div id="clone-cmd-option-bashful" class="clone-cmd-option" onclick="bashfulSelectClone();">Clone Source</div>
-          <button id="copy-button-bashful" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('bashful');">
-            <i class='bx bx-copy'></i>
-          </button>
-        </div>
-        <div class="command-snippet">
-          <code id="bashful-selected-command">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
-        </div>
-        <div class="options">
-          <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
-          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor oceaster" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-        </div>
-      </div>
+    <style>
+      svg {
+        user-select: none;
+        width: 100%;
+        height: 25vh;
+        background-color: transparent;
+      }
+      a {
+        user-select: none;
+      }
+    </style>
+    <div style="margin:auto auto;">
+      <svg viewbox="0 0 10 2">
+        <text x="5" y="1" text-anchor="middle" font-size="1" fill="none" stroke-width=".015" stroke="#fff" font-family="sans-serif">404</text>
+      </svg>
+      <a href="/" style="width:250px;margin:0 auto;">
+        <h1 style="width:100%;text-align:center;margin:0 0 0 0;padding:0 0;font-size:22px;color:#BBB;">Page Not Found.</h1>
+        <h2 style="width:100%;text-align:center;margin:0 0 0 0;padding:0 0;font-size:18px;color:#999;">Click Here To Return Home</h2>
+      </a>
     </div>
     <footer>
       <p id="footer-text">
