@@ -21,6 +21,19 @@
   border-left: 0 solid #000 !important;
   border-right: 0 solid #000 !important;
 }
+@media only screen and (min-width: 1368px) {
+  #nav-container {
+    top: 16px;
+    left: 50%;
+    transform: translate(-50%,0%);
+
+    min-width: 868px;
+    width: 100%;
+    max-width: 1368px;
+
+    border-radius: 4px !important;
+  }
+}
 
 nav {
   display: flex;
@@ -36,7 +49,7 @@ nav {
   height: 100%;
   max-height: 100%;
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1368px) {
   nav {
     min-width: 868px;
     width: 100%;

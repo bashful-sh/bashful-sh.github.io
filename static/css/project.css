@@ -48,7 +48,7 @@
   max-width: 1298px !important;
   box-shadow: 1px 1px 12px #111 !important;
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1368px) {
   .selected-project {
     justify-content: center !important;
     overflow: hidden;
@@ -87,7 +87,7 @@
   flex-direction: row;
   width: 100%;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1368px) {
 }
 
 .project>.content>.preview>.info>.header>img {
@@ -101,7 +101,7 @@
   border-radius: 4px;
   box-shadow: 1px 1px 24px #101010;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1368px) {
   .project>.content>.preview>.info>.header>img {
   }
 }
@@ -119,7 +119,7 @@
 .project>.content>.preview>.info>p {
   font-size: 16px;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1368px) {
   .project>.content>.preview>.info>p {
     font-size: 18px;
   }
@@ -141,7 +141,7 @@
   text-align: left;
   width: 100%;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1368px) {
   .project>.content>.preview>.info>.stats {
     flex-direction: row;
   }
@@ -280,7 +280,7 @@
   width: 100%;
   max-width: 100%;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1368px) {
   .selected-project>.content>.options {
     flex-direction: row;
     align-items: center;

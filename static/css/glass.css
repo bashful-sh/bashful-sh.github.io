@@ -4,7 +4,7 @@
 
 .glass {
   background: rgba(0, 0, 0, 0.45);
-  border-radius: 16px;
+  border-radius: 4px;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
