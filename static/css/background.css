@@ -1,5 +1,5 @@
 :root {
-  --stripe-color: #dfdfdf;
+  --stripe-color: #DADADA;
   --bg: var(--stripe-color);
   --maincolor: var(--bg);
 }
@@ -43,7 +43,7 @@
   }
 }
 .background {
-  z-index: 0;
+  z-index: -1;
   display: flex;
   position: fixed;
   top: 0;
@@ -63,7 +63,7 @@
     var(--stripe-color) 16%
   );
   --rainbow: repeating-linear-gradient(
-    -90deg,
+    -60deg,
     #32FFaa 10%,
     #FF32aa 15%,
     #4444FF 20%,
@@ -126,3 +126,4 @@
   z-index: 1;
   pointer-events: none;
 }
+

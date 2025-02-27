@@ -1,198 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bashful - The Terminal Profile &amp; Pacakge Manager</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui,shrink-to-fit=no,viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="description" content="download & install page for bashful, a bash/shell terminal profile and package management extension.">
-  <meta property="og:title" content="Bashful, The Terminal Profile & Package Manager.">
-  <meta property="og:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
-  <meta property="og:image" content="/static/meta/preview-banner.png">
-  <meta property="og:url" content="https://bashful-sh.github.io">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bashful, The Terminal Profile & Package Manager.">
-  <meta name="twitter:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
-  <meta name="twitter:image" content="/static/meta/preview-banner.png">
-  <meta name="twitter:site" content="@eastercompany">
-  <meta name="twitter:creator" content="@eastercompany">
-  <link rel="icon" href="/static/meta/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/meta/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="/static/meta/apple-touch-icon.png">
-  <link rel="manifest" href="/static/meta/site.webmanifest">
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="static/css/background.css">
-  <link rel="stylesheet" href="static/css/button.css">
-  <link rel="stylesheet" href="static/css/font.css">
-  <link rel="stylesheet" href="static/css/footer.css">
-  <link rel="stylesheet" href="static/css/glass.css">
-  <link rel="stylesheet" href="static/css/h.css">
-  <link rel="stylesheet" href="static/css/html.css">
-  <link rel="stylesheet" href="static/css/img.css">
-  <link rel="stylesheet" href="static/css/input.css">
-  <link rel="stylesheet" href="static/css/main.css">
-  <link rel="stylesheet" href="static/css/nav.css">
-  <link rel="stylesheet" href="static/css/p.css">
-  <link rel="stylesheet" href="static/css/project.css">
-  <script src="static/js/bashful.js"></script>
-  <script src="static/js/cc.js"></script>
-  <script src="static/js/ms.js"></script>
-  <script src="static/js/project.js"></script>
-  <script src="static/js/search.js"></script>
-</head>
-<body>
-  <div class='background'>
-  </div>
-  <div id="nav-container" class="glass">
-    <nav>
-      <div style="justify-content:flex-start;">
-        <a href="/"><img src="static/assets/logo/bashful-sh_logo.jpg" alt="brand logo"/></a>
-        <h1 id="nav-title">bashful-sh</h1>
-      </div>
-      <div style="justify-content:flex-end;">
-        <input id="search-input" type="text" style="display:none;" placeholder="search respository..." onkeydown="onSearchKey(this);"/>
-        <i id="search-open" class="bx bx-search" onclick="openSearch();"></i>
-        <i id="search-close" class="bx bx-x" onclick="closeSearch()" style="display:none;"></i>
-      </div>
-    </nav>
-  </div>
-  <main>
+  <head>
+    <title>Bashful - The Terminal Profile &amp; Pacakge Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui,shrink-to-fit=no,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="download & install page for bashful, a bash/shell terminal profile and package management extension.">
+    <meta property="og:title" content="Bashful, The Terminal Profile & Package Manager.">
+    <meta property="og:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
+    <meta property="og:image" content="/static/meta/preview-banner.png">
+    <meta property="og:url" content="https://bashful-sh.github.io">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bashful, The Terminal Profile & Package Manager.">
+    <meta name="twitter:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
+    <meta name="twitter:image" content="/static/meta/preview-banner.png">
+    <meta name="twitter:site" content="@eastercompany">
+    <meta name="twitter:creator" content="@eastercompany">
+    <link rel="icon" href="/static/meta/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/meta/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/static/meta/apple-touch-icon.png">
+    <link rel="manifest" href="/static/meta/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="/static/css/background.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/project.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+  </head>
+  <body>
+    <div class='background'>
+    </div>
+    <div id="nav-container" class="glass">
+      <nav>
+        <div style="justify-content:flex-start;">
+          <a href="/"><img src="static/assets/logo/bashful-sh_logo.jpg" alt="brand logo"/></a>
+          <h1 id="nav-title">bashful-sh</h1>
+        </div>
+        <div style="justify-content:flex-end;">
+          <input id="search-input" type="text" style="display:none;" placeholder="search respository..." onkeydown="onSearchKey(this);"/>
+          <i id="search-open" class="bx bx-search" onclick="openSearch();"></i>
+          <i id="search-close" class="bx bx-x" onclick="closeSearch()" style="display:none;"></i>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <h1 style="width:100%;text-align:center;margin:2.5vmax auto 0 auto;font-size:22px;color:#ddd;">Download Bashful</h1>
+      <h2 style="width:100%;text-align:center;margin:0 auto 5vmax auto;font-size:18px;color:#999;">discover addons for a modern world.</h2>
 
-    <h1 style="width:100%;text-align:center;margin:2.5vmax auto 0 auto;font-size:22px;color:#ddd;">Download Bashful</h1>
-    <h2 style="width:100%;text-align:center;margin:0 auto 5vmax auto;font-size:18px;color:#999;">discover addons for a modern world.</h2>
-
-    <div class="project glass">
-      <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
-          <i class='bx bx-x'></i>
-      </div>
-      <div class="content">
-        <div class="preview">
-          <div class="info">
-            <div class="header">
-              <img src="static/assets/logo/bashful-sh_logo.jpg" alt="bashful-sh logo"/>
-              <h2>Bashful<p>By Bashful-sh</p></h2>
-            </div>
-            <p id="bashful-description">...</p>
-            <div class="stats">
-              <p class="git-stats">
-                <i class='bx bxs-star'></i><span id="bashful-star-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-broadcast'></i><span id="bashful-watcher-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-git-repo-forked'></i><span id="bashful-fork-count">&nbsp;</span>&nbsp;
-              </p>
-              <p class="last-updated"><i>Last Updated:&nbsp;<span id="bashful-last-updated">&nbsp;</span></i></p>
+      <div class="project glass selected-project">
+        <div class="content">
+          <div class="preview">
+            <div class="info">
+              <div class="header">
+                <img src="static/assets/logo/bashful-sh_logo.jpg" alt="bashful-sh logo"/>
+                <h2>Bashful<p>By Bashful-sh</p></h2>
+              </div>
+              <p id="bashful-description">...</p>
+              <div class="stats">
+                <p class="git-stats">
+                  <i class='bx bxs-star'></i><span id="bashful-star-count">&nbsp;</span>&nbsp;
+                  <i class='bx bx-broadcast'></i><span id="bashful-watcher-count">&nbsp;</span>&nbsp;
+                  <i class='bx bx-git-repo-forked'></i><span id="bashful-fork-count">&nbsp;</span>&nbsp;
+                </p>
+                <p class="last-updated"><i>Last Updated:&nbsp;<span id="bashful-last-updated">&nbsp;</span></i></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="command-selector">
-          <div id="download-cmd-option-bashful" class="download-cmd-option selected" onclick="bashfulSelectDownload();">Download & Install</div>
-          <div id="clone-cmd-option-bashful" class="clone-cmd-option" onclick="bashfulSelectClone();">Clone Source</div>
-          <button id="copy-button-bashful" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('bashful');">
-            <i class='bx bx-copy'></i>
-          </button>
-        </div>
-        <div class="command-snippet">
-          <code id="bashful-selected-command">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
-        </div>
-        <div class="options">
-          <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
-          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <div class="project glass">
-      <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
-          <i class='bx bx-x'></i>
-      </div>
-      <div class="content">
-        <div class="preview">
-          <div class="info">
-            <div class="header">
-              <img src="static/assets/logo/model-server_logo.png" alt="model-server logo"/>
-              <h2>Model Server<p>By Bashful-sh</p></h2>
-            </div>
-            <p id="ms-description">...</p>
-            <div class="stats">
-              <p class="git-stats">
-                <i class='bx bxs-star'></i><span id="ms-star-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-broadcast'></i><span id="ms-watcher-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-git-repo-forked'></i><span id="ms-fork-count">&nbsp;</span>&nbsp;
-              </p>
-              <p class="last-updated"><i>Last Updated:&nbsp;<span id="ms-last-updated">&nbsp;</span></i></p>
-            </div>
+          <div class="command-selector">
+            <div id="download-cmd-option-bashful" class="download-cmd-option selected" onclick="bashfulSelectDownload();">Download & Install</div>
+            <div id="clone-cmd-option-bashful" class="clone-cmd-option" onclick="bashfulSelectClone();">Clone Source</div>
+            <button id="copy-button-bashful" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('bashful');">
+              <i class='bx bx-copy'></i>
+            </button>
+          </div>
+          <div class="command-snippet">
+            <code id="bashful-selected-command">curl -fsSL https://bashful-sh.github.io/install.sh | bash</code>
+          </div>
+          <div class="options">
+            <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
+            <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
+            <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
+            <a href="https://github.com/sponsors/eastercompany/"><button><i style="color:#af4154;" class="bx bxs-heart"></i>&nbsp;Sponsor</button></a>
           </div>
         </div>
-        <div class="command-selector">
-          <div id="download-cmd-option-ms" class="download-cmd-option selected" onclick="selectDownload('ms');">Download & Install</div>
-          <div id="clone-cmd-option-ms" class="clone-cmd-option" onclick="selectClone('ms');">Clone Source</div>
-          <button id="copy-button-ms" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('ms');">
-            <i class='bx bx-copy'></i>
-          </button>
-        </div>
-        <div class="command-snippet">
-          <code id="ms-selected-command">coming soon...</code>
-        </div>
-        <div class="options">
-          <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
-          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-        </div>
       </div>
-    </div>
 
-    <div class="project glass">
-      <div class="toggle-project-button" onclick="toggleProjectWindow(this);">
-          <i class='bx bx-x'></i>
-      </div>
-      <div class="content">
-        <div class="preview">
-          <div class="info">
-            <div class="header">
-              <img src="static/assets/logo/custom-cursor_logo.png" alt="custom-cursor logo"/>
-              <h2>Custom Cursor<p>By Bashful-sh</p></h2>
-            </div>
-            <p id="cc-description">...</p>
-            <div class="stats">
-              <p class="git-stats">
-                <i class='bx bxs-star'></i><span id="cc-star-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-broadcast'></i><span id="cc-watcher-count">&nbsp;</span>&nbsp;
-                <i class='bx bx-git-repo-forked'></i><span id="cc-fork-count">&nbsp;</span>&nbsp;
-              </p>
-              <p class="last-updated"><i>Last Updated:&nbsp;<span id="cc-last-updated">&nbsp;</span></i></p>
-            </div>
-          </div>
-        </div>
-        <div class="command-selector">
-          <div id="download-cmd-option-cc" class="download-cmd-option selected" onclick="selectDownload('cc');">Download & Install</div>
-          <div id="clone-cmd-option-cc" class="clone-cmd-option" onclick="selectClone('cc');">Clone Source</div>
-          <button id="copy-button-cc" class="copy-button" title="Copy to Clipboard" onclick="selectCopy('cc');">
-            <i class='bx bx-copy'></i>
-          </button>
-        </div>
-        <div class="command-snippet">
-          <code id="cc-selected-command">coming soon...</code>
-        </div>
-        <div class="options">
-          <a href="https://github.com/bashful-sh/bashful/wiki"><button>Documentation<i class="bx bx-file"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful"><button>Source<i class="bx bx-code"></i></button></a>
-          <a href="https://github.com/bashful-sh/bashful/commits/LTS"><button>Commits<i class="bx bx-git-commit"></i></button></a>
-          <iframe src="https://github.com/sponsors/oceaster/button" title="Sponsor" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <p id="footer-text">
-        All related assets are copyright<br/>&copy; Easter Company, all rights reserved.
-      </p>
-    </footer>
-  </main>
-</body>
+      <footer>
+        <p id="footer-text">
+          All related assets are copyright<br/>&copy; Easter Company, all rights reserved.
+        </p>
+      </footer>
+    </main>
+  </body>
+  <script src="/static/js/bashful.js"></script>
+  <script src="/static/js/project.js"></script>
+  <script src="/static/js/search.js"></script>
 </html>

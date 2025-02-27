@@ -79,14 +79,22 @@ nav>div {
   height: 100%;
 }
 
-nav>div>a>img {
-  border: 1px solid #000;
-  border-radius: 4px;
-}
-nav>div>a>img,nav>div>i {
+nav>div>i {
   cursor: pointer;
   width: 24px;
   height: 24px;
+  font-size: 24px;
+  margin: 0 24px;
+}
+
+nav>div>a>img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: center;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
   font-size: 24px;
   margin: 0 24px;
 }

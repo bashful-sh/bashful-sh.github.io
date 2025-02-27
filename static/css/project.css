@@ -109,6 +109,8 @@
 .project>.content>.preview>.info>.header>h2 {
   color:#DDD;
   font-size:20px;
+  margin: 0;
+  text-align: left;
 }
 
 .project>.content>.preview>.info>.header>h2>p {

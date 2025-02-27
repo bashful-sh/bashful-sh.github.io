@@ -3,17 +3,7 @@
 */
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  vertical-align: center;
-  justify-content: center;
-  width: fit-content;
-  height: 5vmin;
-  margin-top: auto;
-  padding-top: 2.5vmin;
-  background-color: transparent;
+  padding: 48px;
 }
 
 #footer-text {

@@ -1,89 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bashful - The Terminal Profile &amp; Pacakge Manager</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui,shrink-to-fit=no,viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="description" content="download & install page for bashful, a bash/shell terminal profile and package management extension.">
-  <meta property="og:title" content="Bashful, The Terminal Profile & Package Manager.">
-  <meta property="og:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
-  <meta property="og:image" content="/static/meta/preview-banner.png">
-  <meta property="og:url" content="https://bashful-sh.github.io">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bashful, The Terminal Profile & Package Manager.">
-  <meta name="twitter:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
-  <meta name="twitter:image" content="/static/meta/preview-banner.png">
-  <meta name="twitter:site" content="@eastercompany">
-  <meta name="twitter:creator" content="@eastercompany">
-  <link rel="icon" href="/static/meta/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/meta/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="/static/meta/apple-touch-icon.png">
-  <link rel="manifest" href="/static/meta/site.webmanifest">
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="static/css/background.css">
-  <link rel="stylesheet" href="static/css/button.css">
-  <link rel="stylesheet" href="static/css/font.css">
-  <link rel="stylesheet" href="static/css/footer.css">
-  <link rel="stylesheet" href="static/css/glass.css">
-  <link rel="stylesheet" href="static/css/h.css">
-  <link rel="stylesheet" href="static/css/html.css">
-  <link rel="stylesheet" href="static/css/img.css">
-  <link rel="stylesheet" href="static/css/input.css">
-  <link rel="stylesheet" href="static/css/main.css">
-  <link rel="stylesheet" href="static/css/nav.css">
-  <link rel="stylesheet" href="static/css/p.css">
-  <link rel="stylesheet" href="static/css/project.css">
-  <script src="static/js/bashful.js"></script>
-  <script src="static/js/project.js"></script>
-  <script src="static/js/search.js"></script>
-</head>
-<body>
-  <div class='background'>
-  </div>
-  <div id="nav-container" class="glass">
-    <nav>
-      <div style="justify-content:flex-start;">
-        <a href="https://github.com/bashful-sh"><img src="static/assets/logo/bashful-sh_logo.jpg" alt="brand logo"/></a>
-        <h1 id="nav-title">bashful-sh</h1>
-      </div>
-      <div style="justify-content:flex-end;">
-        <input id="search-input" type="text" style="display:none;" placeholder="search respository..." onkeydown="onSearchKey(this);"/>
-        <i id="search-open" class="bx bx-search" onclick="openSearch();"></i>
-        <i id="search-close" class="bx bx-x" onclick="closeSearch()" style="display:none;"></i>
-      </div>
-    </nav>
-  </div>
-  <main>
-    <style>
-      svg {
-        user-select: none;
-        width: 100%;
-        height: 25vh;
-        background-color: transparent;
-      }
-      a {
-        user-select: none;
-      }
-    </style>
-    <div style="margin:auto auto;">
-      <svg viewbox="0 0 10 2">
-        <text x="5" y="1" text-anchor="middle" font-size="1" fill="none" stroke-width=".015" stroke="#fff" font-family="sans-serif">404</text>
-      </svg>
-      <a href="/" style="width:250px;margin:0 auto;">
-        <h1 style="width:100%;text-align:center;margin:0 0 0 0;padding:0 0;font-size:22px;color:#BBB;">Page Not Found.</h1>
-        <h2 style="width:100%;text-align:center;margin:0 0 0 0;padding:0 0;font-size:18px;color:#999;">Click Here To Return Home</h2>
-      </a>
+  <head>
+    <title>Bashful - The Terminal Profile &amp; Pacakge Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui,shrink-to-fit=no,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="description" content="download & install page for bashful, a bash/shell terminal profile and package management extension.">
+    <meta property="og:title" content="Bashful, The Terminal Profile & Package Manager.">
+    <meta property="og:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
+    <meta property="og:image" content="/static/meta/preview-banner.png">
+    <meta property="og:url" content="https://bashful-sh.github.io">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bashful, The Terminal Profile & Package Manager.">
+    <meta name="twitter:description" content="Bashful (bashful-sh) is an open-source bash/shell terminal profile and package manager extension currently developed and maintained by Easter Company (contact@easter.company) and Owen Easter (owen@easter.company)">
+    <meta name="twitter:image" content="/static/meta/preview-banner.png">
+    <meta name="twitter:site" content="@eastercompany">
+    <meta name="twitter:creator" content="@eastercompany">
+    <link rel="icon" href="/static/meta/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/meta/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/static/meta/apple-touch-icon.png">
+    <link rel="manifest" href="/static/meta/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="/static/css/background.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/project.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+  </head>
+  <body>
+    <div class='background'>
     </div>
-    <footer>
-      <p id="footer-text">
-        All related assets are copyright<br/>&copy; Easter Company, all rights reserved.
-      </p>
-    </footer>
-  </main>
-</body>
+    <div id="nav-container" class="glass">
+      <nav>
+        <div style="justify-content:flex-start;">
+          <a href="https://github.com/bashful-sh"><img src="static/assets/logo/bashful-sh_logo.jpg" alt="brand logo"/></a>
+          <h1 id="nav-title">bashful-sh</h1>
+        </div>
+        <div style="justify-content:flex-end;">
+          <input id="search-input" type="text" style="display:none;" placeholder="search respository..." onkeydown="onSearchKey(this);"/>
+          <i id="search-open" class="bx bx-search" onclick="openSearch();"></i>
+          <i id="search-close" class="bx bx-x" onclick="closeSearch()" style="display:none;"></i>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <style>
+        svg {
+          user-select: none;
+          width: 100%;
+          height: 25vh;
+          background-color: transparent;
+        }
+        a {
+          user-select: none;
+        }
+      </style>
+      <div style="margin:auto auto;">
+        <svg viewbox="0 0 10 2">
+          <text x="5" y="1" text-anchor="middle" font-size="1" fill="none" stroke-width=".015" stroke="#fff" font-family="sans-serif">404</text>
+        </svg>
+        <a href="/" style="width:250px;margin:0 auto;">
+          <h1 style="width:100%;text-align:center;margin:0 0 0 0;padding:0 0;font-size:22px;color:#BBB;">Page Not Found.</h1>
+          <h2 style="width:100%;text-align:center;margin:0 0 0 0;padding:0 0;font-size:18px;color:#999;">Click Here To Return Home</h2>
+        </a>
+      </div>
+      <footer>
+        <p id="footer-text">
+          All related assets are copyright<br/>&copy; Easter Company, all rights reserved.
+        </p>
+      </footer>
+    </main>
+    <script src="static/js/search.js"></script>
+  </body>
 </html>
